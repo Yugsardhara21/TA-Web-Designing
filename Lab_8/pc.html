@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6C - Website Layout</title>
+    <style>
+        /* 1. Basic Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 2. Main Container - Centers the website */
+        .container {
+            width: 80%;
+            /* Sets width to 80% of screen */
+            margin: 0 auto;
+            /* Centers the container */
+            border: 2px solid #ccc;
+            /* Optional: grey border around whole site */
+        }
+
+        /* 3. Header Styles (Red) */
+        header {
+            background-color: #C0392B;
+            /* Red */
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            /* Creates the white gap below header */
+        }
+
+        /* 4. Middle Section Wrapper (Flexbox) */
+        .middle-section {
+            display: flex;
+            /* Puts Nav and Content side-by-side */
+            gap: 5px;
+            /* Creates the white gap between Nav and Content */
+            min-height: 400px;
+            /* Ensures the middle part is tall */
+        }
+
+        /* 5. Navigation Styles (Blue) */
+        nav {
+            background-color: #1A5276;
+            /* Dark Blue */
+            color: white;
+            flex: 1;
+            /* Takes up 1 portion of width */
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            /* Center text vertically */
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 6. Content Styles (Yellow) */
+        main {
+            background-color: #F4D03F;
+            /* Yellow */
+            color: black;
+            flex: 3;
+            /* Takes up 3 portions (3x wider than nav) */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 7. Sidebar Styles (Green) */
+        aside {
+            background-color: #196F3D;
+            /* Green */
+            color: white;
+            float: right;
+            /* Pushes box to the right corner */
+            width: 30%;
+            /* Width of sidebar */
+            height: 200px;
+            /* Height of sidebar */
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+            /* Center text inside Sidebar */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 8. Footer Styles (Sky Blue) */
+        footer {
+            background-color: #3498DB;
+            /* Sky Blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5px;
+            /* Creates the white gap above footer */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            Header
+        </header>
+
+        <div class="middle-section">
+
+            <nav>
+                Navigation
+            </nav>
+
+            <main>
+                <aside>
+                    Sidebar
+                </aside>
+
+                <br><br><br> Content
+            </main>
+
+        </div>
+
+        <footer>
+            Footer
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

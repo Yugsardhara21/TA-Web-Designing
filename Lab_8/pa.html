@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Layout Assignment</title>
+    <style>
+      /* 1. General Page Styles */
+      body {
+        /* The light blue background surrounding the main layout */
+        background-color: #add8e6;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px; /* Creates the blue border effect around the box */
+      }
+
+      .page {
+        background-color: #add8e6;
+      }
+
+      /* 2. Main Container Wrapper */
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto; /* Centers the container */
+        background-color: white;
+      }
+
+      /* 3. Header Section (Purple) */
+      header {
+        background-color: #800080;
+        color: white;
+        padding: 20px;
+        font-size: 24px;
+      }
+
+      /* 4. Main Content Area (Orange) */
+      .main-content-wrapper {
+        background-color: #ffa500;
+        padding: 20px;
+        /* This enables the side-by-side layout */
+        display: flex;
+        justify-content: space-between;
+        gap: 40px; /* Space between left entries and sidebar */
+        min-height: 400px; /* Ensures the orange box is tall */
+      }
+
+      /* Left Column Styles */
+      .left-column {
+        flex: 2; /* Takes up roughly 66% of the space */
+      }
+
+      .section-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      /* The Black Entry Bars */
+      .entry-box {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+
+      /* Right Column (Sidebar) Styles */
+      .right-column {
+        flex: 1; /* Takes up roughly 33% of the space */
+        margin-top: 40px; /* Pushes sidebar down slightly to match image */
+      }
+
+      /* The Black Sidebar Box */
+      .sidebar-box {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        height: 200px; /* Fixed height to look like a sidebar */
+      }
+
+      /* 5. Footer Section (Blue) */
+      footer {
+        background-color: blue;
+        color: white;
+        padding: 15px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page">Page</div>
+      <header>Header</header>
+
+      <div class="main-content-wrapper">
+        <div class="left-column">
+          <div class="section-title">Content</div>
+
+          <div class="entry-box">Entry</div>
+          <div class="entry-box">Entry</div>
+          <div class="entry-box">Entry</div>
+        </div>
+
+        <div class="right-column">
+          <div class="sidebar-box">Sidebar</div>
+        </div>
+      </div>
+
+      <footer>&copy;Darshan University-Rajkot</footer>
+    </div>
+  </body>
+</html>
